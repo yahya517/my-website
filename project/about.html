@@ -3,50 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="View the Math Club curriculum and class schedule.">
+    <title>About the Program | Math Club</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>wellcome to mathclub</h1>
-        <nav><a href="index.html">home</a>
-        <a href="about.html">about</a>
-<a href="contact.html">contact us </a>
-        </nav>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Math Club home">
+                <span class="brand-mark" aria-hidden="true">MC</span>
+                <span>Math Club</span>
+            </a>
+            <nav class="nav-links" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html" aria-current="page">About</a>
+                <a href="contact.html">Contact us</a>
+            </nav>
+        </div>
     </header>
-<main>
-<section>
-    <h2>students table</h2>
-    <table>
-        <tr>
-            <th>Cours</th>
-            <th>Id</th>
-            <th>Day</th>
-        </tr>
-        <tr>
-            <td>Html</td>
-            <td>8150</td>
-            <td>Monday</td>
-        </tr>
-        <tr>
-<td>Database</td>
-<td>5875</td>
-<td>Tuesday</td>
-        </tr>
-    </table>
-</section>
-<section>
-    <h3>what we will learning</h3>
-    <ol>
-        <li>Html</li>
-        <li>Css</li>
-        <li>Js</li>
-    </ol>
-    <img src="html.jpg" alt="html and css and js" width="200">
-</section>
-
-
-</main>
-
+    <main class="container" id="main-content">
+        <div class="page-heading">
+            <p class="eyebrow">About Math Club</p>
+            <h1>Welcome to our learning community.</h1>
+            <p>Explore the courses, schedule, and core technologies covered throughout the program.</p>
+        </div>
+        <div class="about-layout">
+            <section class="card content-card" aria-labelledby="schedule-title">
+                <p class="eyebrow">Student schedule</p>
+                <h2 id="schedule-title">Course overview</h2>
+                <div class="table-wrap">
+                    <table>
+                        <caption class="table-caption">Current course schedule</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Course</th>
+                                <th scope="col">ID</th>
+                                <th scope="col">Day</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HTML</td>
+                                <td>8150</td>
+                                <td>Monday</td>
+                            </tr>
+                            <tr>
+                                <td>Database</td>
+                                <td>5875</td>
+                                <td>Tuesday</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <aside class="card content-card" aria-labelledby="learning-title">
+                <p class="eyebrow">Curriculum</p>
+                <h2 id="learning-title">What we will learn</h2>
+                <ol class="curriculum-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+                <img class="learning-image" src="html.jpg" alt="Programming technologies including HTML, CSS, and JavaScript">
+            </aside>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner container">
+            <strong>Math Club</strong>
+            <span>Learn. Practice. Build.</span>
+        </div>
+    </footer>
 </body>
-
 </html>
